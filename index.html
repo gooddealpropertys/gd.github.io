@@ -10,9 +10,62 @@
     <meta name="Keywords"
         content="good deal, good deal property dealers, property, real estate, Real Estate, REAL ESTATE, Real estate, kharghar, Kharghar, KHARGHAR, Good deal, GOOD DEAL, Good deal, real estate kharghar, Real estate kharghar, agent, web, web development, html">
     <meta name="Robots" content="INDEX, FOLLOW">
+
     <title>Good Deal Property Dealers</title>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <style>
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .popup {
+            background-color: #e6e6e6;
+            /* background: url(img/pattern.png);
+            background-size: contain; */
+            width: 448px;
+            padding: 30px 40px;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 28%;
+            border-radius: 5px;
+            font-family: 'Noto Sans', sans-serif;
+            display: none;
+            text-align: center;
+        }
+
+        .popup button {
+            display: block;
+            margin: 0 0 20px auto;
+            background-color: transparent;
+            font-size: 30px;
+            color: #c5c5c5;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .popup p {
+            font-size: 14px;
+            text-align: justify;
+            margin: 20px 0;
+            line-height: 25px;
+        }
+
+        /* a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+} */
         .mySlides {
 
             filter: invert(0%);
@@ -355,7 +408,7 @@
         .inner-cutout {
             padding: 40px 0px;
             display: block;
-            background: url(img/lines.jpg);
+            /* background: url(img/lines.jpg); */
             background-color: #5d5f5f;
             /*#ff6f69*/
             margin: 2%;
@@ -613,9 +666,14 @@
 
         #fourth img {
             filter: invert(0%);
-            margin-left: 2%;
-            width: 326px;
-            /* background: url(img/office.jpeg); */
+            margin-left: -18%;
+            width: 549px;
+            animation: example2 2s infinite;
+        }
+        @keyframes example2 {
+            20% {
+                opacity: .5;
+            }
         }
 
         div .ex {
@@ -792,6 +850,12 @@
             margin-left: 85%;
         }
 
+        .popbtn {
+            margin-left: 0%;
+            padding: 1%;
+            border-radius: 7px;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -876,7 +940,7 @@
                         </p>
                     </div>
                     <div id="fourth" class="container2">
-                        <img src="img/office.jpeg" alt="">
+                        <img src="img/card.jpg" alt="">
                     </div>
 
                 </div>
@@ -885,7 +949,6 @@
     </header>
 
     <h2 id="contact_head">CONTACT US</h2>
-
     <div class="container" id="contact">
         <img src="img/logo2.png" alt="" style="width: 15%; margin-left: 1%;">
         <p style="margin-left: 130px; margin-top: -12%;">BOOK AN APPOINTMENT</p>
@@ -1110,6 +1173,27 @@
         <img src="img/kamdhenu.png" id="kaamdhenulogo" alt="" style="width: 9%; padding-right: 2%;">
         <img src="img/runwal.jpg" id="runwallogo" alt="" style="width: 9%;">
     </div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <img src="img/logo2.png" alt="" style="width: 17%; margin-left: -85%;">
+        <h2 style="  margin-top: -23%; margin-left: 11%; font-size: 17px;">Share your details to get a call back</h2>
+        <p>
+        <form action="https://sheetdb.io/api/v1/t4zwk5a7hjp27" method="POST" id="sheetdb-form">
+            <div class="form_pop">
+                <input type="text" name="data[name]" placeholder="Enter your Name*"
+                    style="height: 23px; margin: 10px; border: 2px solid black; border-radius: 10px;" required>
+            </div>
+            <div class="form_pop">
+                <input type="text" name="data[contact]" placeholder="Enter your contact number*"
+                    style="height: 23px; margin: 10px; border: 2px solid black; border-radius: 10px;" required>
+            </div>
+            <div class="form_pop">
+                <input type="email" name="data[email]" placeholder="Enter your Email Id"
+                    style="height: 23px; margin: 10px; border: 2px solid black; border-radius: 10px;">
+            </div>
+            </p>
+            <input type="submit" value="Submit Form" class="popbtn">
+    </div>
     <script>
         var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
@@ -1167,6 +1251,19 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                1000
+            )
+        });
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+
     </script>
 </body>
 
