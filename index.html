@@ -316,7 +316,7 @@
             padding: 2rem;
             display: inline-block;
             position: absolute;
-            top: 1453px;
+            top: 1776px;
             left: 4%;
             width: 590px;
             padding: 20px;
@@ -542,7 +542,7 @@
 
         #contact_head {
             border: 2px solid white;
-            margin: 1704px 500px 0px 500px;
+            margin: 2030px 500px 0px 500px;
             text-align: center;
             background-color: #39d9b8;
             animation: border 2s infinite;
@@ -666,10 +666,12 @@
 
         #fourth img {
             filter: invert(0%);
-            margin-left: -18%;
-            width: 549px;
+            margin-left: 13%;
+            width: 232px;
+            margin-top: -8%;
             animation: example2 2s infinite;
         }
+
         @keyframes example2 {
             20% {
                 opacity: .5;
@@ -856,6 +858,150 @@
             border-radius: 7px;
         }
 
+        .sale {
+            width: 10%;
+        }
+
+        /* _______________________________________________________________________________- */
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+        /* body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif !important;
+    } */
+
+        section {
+            width: 100%;
+            height: 100vh;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 140px 0;
+        }
+
+        .card {
+            position: relative;
+            max-width: 212px;
+            height: auto;
+            background: linear-gradient(-45deg, #fe0847, #feae3f);
+            border-radius: 15px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        .card:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .col-sm-4:nth-child(1) .card,
+        .col-sm-4:nth-child(1) .card .title .fa {
+            background: linear-gradient(-45deg, #f403d1, #64b5f6);
+
+        }
+
+        .col-sm-4:nth-child(2) .card,
+        .col-sm-4:nth-child(2) .card .title .fa {
+            background: linear-gradient(-45deg, #ffec61, #f321d7);
+
+        }
+
+        .col-sm-4:nth-child(3) .card,
+        .col-sm-4:nth-child(3) .card .title .fa {
+            background: linear-gradient(-45deg, #24ff72, #9a4eff);
+
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 40%;
+            background: rgba(255, 255, 255, .1);
+            z-index: 1;
+            -webkit-transform: skewY(-5deg) scale(1.5);
+            transform: skewY(-5deg) scale(1.5);
+        }
+
+        .title .fa {
+            color: #fff;
+            font-size: 60px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+
+        }
+
+        .title h2 {
+            position: relative;
+            margin: 20px 0 0;
+            padding: 0;
+            color: #fff;
+            font-size: 28px;
+            z-index: 2;
+        }
+
+        .price,
+        .option {
+            position: relative;
+            z-index: 2;
+        }
+
+        .price h4 {
+            margin: 0;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .option ul {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .option ul li {
+            margin: 0 0 10px;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .card a {
+            position: relative;
+            z-index: 2;
+            background: #fff;
+            color: black;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px;
+            display: block;
+            text-align: center;
+            margin: 20px auto 0;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+        }
+
+        .card a:hover {
+            text-decoration: none;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -898,11 +1044,12 @@
                     <b class="navlogo"><img src="img/logopng1.png" alt=""></b>
                     <a href="#home">Home</a>
                     <a href="#about_head">About us</a>
+                    <a href="prop.html">Available Properties</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact_head">Contact us</a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gooddealpropertys@gmail.com" target="_blank"
                         style="text-decoration: none;">Email Us</a>
-                    <a href="https://g.page/good-deal-property?share" target="_blank">Locate Us</a>
+                    <!-- <a href="https://g.page/good-deal-property?share" target="_blank">Locate Us</a> -->
                     <a href="#channel_head">Channel Partners</a>
                 </div>
 
@@ -940,8 +1087,71 @@
                         </p>
                     </div>
                     <div id="fourth" class="container2">
-                        <img src="img/card.jpg" alt="">
+                        <section>
+                            <div class="container-fluid" style="  margin-top: -5%;">
+                                <div class="prop_container">
+                                    <div class="row">
+                                        <div class="col-sm-4" style="margin-left: -42%; margin-top: -31%; width: 38%;">
+                                            <div class="card text-center">
+                                                <div class="title">
+                                                    <img src="img/logopng1.png" alt=""
+                                                        style="width: 28%; filter: invert(1);">
+                                                    <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+                                                    <h2 style="color: black; font-weight: 900;">SALE</h2>
+                                                </div>
+                                        
+                                                <a href="prop.html">See Properties</a>
+                                            </div>
+                                        </div>
+                                        <!-- END Col one -->
+                                        <!-- ==================================================================================================== -->
+                                        <div class="col-sm-4" style="margin-left: 4%;width: 38%;margin-top: -47%;">
+                                            <div class="card text-center">
+                                                <div class="title">
+                                                    <!-- <i class="fa fa-plane" aria-hidden="true"></i> -->
+                                                    <img src="img/logopng1.png" alt=""
+                                                        style="width: 28%; filter: invert(1);">
+
+                                                    <h2 style="color: black; font-weight: 900;">PURCHASE</h2>
+                                                </div>
+                                                
+                                                <a href="prop.html">See Properties</a>
+                                            </div>
+                                        </div>
+                                        <!-- END Col two -->
+                                        <!-- ==================================================================================================== -->
+
+                                        <div class="col-sm-4" style="margin-left: 49%;width: 38%;margin-top: -47%;">
+                                            <div class="card text-center">
+                                                <div class="title">
+                                                    <!-- <i class="fa fa-rocket" aria-hidden="true"></i> -->
+                                                    <img src="img/logopng1.png" alt=""
+                                                        style="width: 28%; filter: invert(1);">
+
+                                                    <h2 style="color: black; font-weight: 900;">RENT</h2>
+                                                </div>  
+                                                <a href="prop.html">See Properties</a>
+
+                                            </div>
+                                        </div>
+                                        <!-- END Col three -->
+                                        <!-- ==================================================================================================== -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <button id="sale">
+                            SALE
+                        </button ><br>
+                        <button id="purchase">
+                            PURCHASE
+                        </button><br>
+                        <button id="rent">
+                            RENT
+                        </button> -->
                     </div>
+
 
                 </div>
 
@@ -1194,6 +1404,7 @@
             </p>
             <input type="submit" value="Submit Form" class="popbtn">
     </div>
+
     <script>
         var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
